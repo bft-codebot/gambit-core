@@ -1,6 +1,6 @@
 import { assertEquals, assertRejects } from "@std/assert";
 import * as path from "@std/path";
-import { renderDeck } from "../mod.ts";
+import { renderDeck } from "@bfmono/packages/gambit-core/mod.ts";
 import { logger as renderLogger } from "./render.ts";
 import type { ToolDefinition } from "./types.ts";
 

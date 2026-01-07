@@ -4,7 +4,7 @@ import type {
   ModelMessage,
   ModelProvider,
   ToolDefinition,
-} from "../types.ts";
+} from "@bfmono/packages/gambit-core/src/types.ts";
 
 const logger = console;
 
