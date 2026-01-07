@@ -25,6 +25,9 @@ jobs:
       - name: Register Deno problem matcher
         run: echo '::add-matcher::.github/deno-problem-matcher.json'
 
+      - name: Prepare Nix profile directory
+        run: mkdir -p "$(dirname "$NIX_DEV_PROFILE")"
+
       - name: Lint
         run: |
           nix develop --profile "$NIX_DEV_PROFILE" --command deno lint
